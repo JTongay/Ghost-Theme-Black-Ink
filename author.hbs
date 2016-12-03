@@ -13,7 +13,7 @@
     </nav>
     <div class="vertical">
         <div class="main-header-content innerp">
-            
+
         </div>
     </div>
     <a class="scroll-down icon-arrow-left" href="#content" data-offset="45"><span class="hidden">Scroll Down</span></a>
@@ -21,11 +21,11 @@
 <main class="content-main-author" role="main">
     <div class="whole-page-holder">
 <!------------ UNCOMMENT TO DISPLAY PAGE TITLE ------------------>
-<!--            <h1 class="page-title">{{@blog.title}}</h1>-->
+           <h1 class="page-title">{{@blog.title}}</h1>
 <!------------ UNCOMMENT TO DISPLAY PAGE TITLE ------------------>
         {{#if @blog.logo}}<a href="{{@blog.url}}"><img class="sitemainlogoa" src="{{@blog.logo}}" alt="{{@blog.title}}" /></a>{{/if}}
         <article class="postp">
-            
+
     <section class="author-profile inner">
         {{#if image}}
           <div class="auth-image-holder"><img class="auth-image" src="{{image}}"/></div>
@@ -41,16 +41,15 @@
             <br /><br /><br />
         </div>
     </section>
-            
+
         </article>
     </div>
    {{!-- The tiny footer at the very bottom --}}
-        
-</main>     
+
+</main>
 {{/author}}
 
 {{!-- The tiny footer at the very bottom --}}
         <footer class="site-footera clearfix">
             <section class="copyright"><a href="{{@blog.url}}">{{@blog.title}}</a> &copy; {{date format="YYYY"}}</section>
         </footer>
-        

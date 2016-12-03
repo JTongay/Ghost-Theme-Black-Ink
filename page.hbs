@@ -1,7 +1,7 @@
 {{!< default}}
 
-{{!-- The comment above "< default" means - insert everything in this file into
-    the {{{body}}} of the default.hbs template, containing the blog header/footer. --}}
+<!-- {{!-- The comment above "< default" means - insert everything in this file into
+    the {{{body}}} of the default.hbs template, containing the blog header/footer. --}} -->
 
 {{!-- Everything inside the #post tags pulls data from the post --}}
 
@@ -22,7 +22,7 @@
 <main class="content-main-page" role="main">
     <div class="whole-page-holder">
 <!------------ UNCOMMENT TO DISPLAY PAGE TITLE ------------------>
-<!--            <h1 class="page-title-wide">{{@blog.title}}</h1>-->
+           <h1 class="page-title-wide">{{@blog.title}}</h1>
 <!------------ UNCOMMENT TO DISPLAY PAGE TITLE ------------------>
         {{#if @blog.logo}}<a href="{{@blog.url}}"><img class="sitemainlogop" src="{{@blog.logo}}" alt="{{@blog.title}}" /></a>{{/if}}
         <article class="postp">
@@ -37,18 +37,18 @@
                 <span class="post-meta">
                     {{tags prefix="Tags: " separator="  "}}
                 </span>
-                <!--------- Where page scrolls to when arrow is clicked ------------>            
+                <!--------- Where page scrolls to when arrow is clicked ------------>
                 <main id="content" class="content" role="main">
                 </main>
-<!--------- Where page scrolls to when arrow is clicked ------------>  
+<!--------- Where page scrolls to when arrow is clicked ------------>
 
-            
+
             {{/post}}
 
         </article>
     </div>
    {{!-- The tiny footer at the very bottom --}}
-        
+
 </main>
 {{#if @blog.description}}
         <p class="site-desc"><img src="{{@blog.url}}{{@blog.url}}/assets/imgs/desc.png" />{{@blog.description}}</p>
@@ -56,4 +56,3 @@
 <footer class="site-footer clearfix">
             <section class="copyright"><a href="{{@blog.url}}">{{@blog.title}}</a> &copy; {{date format="YYYY"}}</section>
         </footer>
-
